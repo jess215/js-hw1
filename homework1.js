@@ -14,15 +14,21 @@ for (let i = 10; i >= 0; i--) {
 
 // 3. write a for loop that loops through this array and logs 'odd/even' based on wether the number is odd even
 console.log('Odd/Even label from 10')
-for (let i = 10; i >= 0; i--) {
-    if (i % 2 === 0) {
-        console.log(`${i} even`);
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+nums.forEach((c)=>{
+    if (c % 2 ===0) {
+        console.log(`${c} even`);
     } else {
-        console.log(`${i} odd`)
+        console.log(`${c} odd`)
     }
-}   
+})
 
 // 4. write a while loop that starts at 0 and counts up to 10 ie: 0,1,2,3....10
+console.log('Count to 10')
+for (let i = 1; i <= 10; i++) {
+    console.log(i)
+}
 
 
 // 5. Look closely at the code below
