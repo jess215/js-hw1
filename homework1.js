@@ -32,16 +32,37 @@ for (let i = 1; i <= 10; i++) {
 
 
 // 5. Look closely at the code below
+const isOdd = (num) =>{
+    return num % 2 === 0
+}
 
+if(isOdd(2)){
+    console.log('is Odd')
+} else {
+    console.log('is Even')
+}
 
 // 6. what will this log?
+//// It will return the log "isOdd"
 
 
 // 7. what is the value of isOdd(2) 
+//// The value is 2
 
 
 // 8. Fix the isOdd function to make this work
+const isEven = (num) =>{
+    if(num % 2 === 0){
+        return 'is Even'
+    }else{
+        return 'is Odd'
+    }
+}
 
+let x = isEven(2)
+console.log(x)
+
+////////////////
 
 // Functions
 
