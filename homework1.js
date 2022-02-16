@@ -43,7 +43,7 @@ if(isOdd(2)){
 }
 
 // 6. what will this log?
- It will return the log "isOdd"
+ //It will return the log "isOdd"
 
 
 // 7. what is the value of isOdd(2) 
@@ -86,21 +86,11 @@ getSum([2, 5, 6, 7, 9]);
 
 // 3. Write a function that returns the number of vowels in string
 console.log('Count number of vowels in a string')
-
-function getCount(str) {
-    let vowelsCount = 0
+function countVowels(str) {
+    return str.match(/[aeiou]/gi).length;
 }
 
-function getCount(str) {
-    let vowelsCount = 0
-    const vowels = ['a', 'e', 'i', 'o', 'u']
-    for (let char of str) {
-        if (vowels.includes(char)) {
-            vowelsCount++
-        }
-    }
-    return vowelsCount
-}
+console.log(countVowels('The quick brown fox jumped over the lazy dog'));
 
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
 function math(opp, num1, num2) {
