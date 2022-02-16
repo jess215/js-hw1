@@ -85,14 +85,22 @@
 ////getSum([2, 5, 6, 7, 9]);
 
 // 3. Write a function that returns the number of vowels in string
-//////////
-//console.log('Count number of vowels in a string')
-//
-//function getVowels(str) {
-//    var m = str.match(/[aeiou]/gi);
-//    return m === null ? 0 : m.length;
-//}
-//////////
+console.log('Count number of vowels in a string')
+
+function getCount(str) {
+    let vowelsCount = 0
+}
+
+function getCount(str) {
+    let vowelsCount = 0
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            vowelsCount++
+        }
+    }
+    return vowelsCount
+}
 
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
 
