@@ -96,7 +96,6 @@ console.log(countVowels('The quick brown fox jumped over the lazy dog'));
 function math(opp, num1, num2) {
 
 }
-
 // Fist thing, operator as a string, two numbers, 
 
 
