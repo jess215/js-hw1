@@ -94,9 +94,8 @@ console.log(countVowels('The quick brown fox jumped over the lazy dog'));
 
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
 function math(opp, num1, num2) {
-
+    math('+',2,3)
 }
-// Fist thing, operator as a string, two numbers, 
 
 
 // 5. Write a function that takes an array of strings and a string and returns true or false if the string is in the array.
