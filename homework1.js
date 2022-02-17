@@ -144,6 +144,22 @@ let index = arrFruit.indexOf('banana');
 console.log(arrFruit.indexOf('banana'));
 
 // 10. write a function that takes a number and uses a ternary to return if the number is odd or even.
+const number = (23)
 
+if(number % 2 === 0) {
+    console.log("The number is even.")
+} else {
+    console.log("The number is odd.")
+}
 
 // 11. Write a function that prints all  numbers from 0 – 10
+{
+    function recurseMe(num) {
+        if(num > 10) {
+            return;
+        }
+        console.log(num);
+        recurseMe(++num)
+    }
+    recurseMe(0);
+}
