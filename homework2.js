@@ -52,12 +52,43 @@ console.log('Name and height')
 console.log(charNameHeight)
 
 //4. Get array of all first names
+const charName = characters.map((c)=>{
+    return c.name
+})
 
+console.log('Name')
+console.log(charName[0]);
+console.log(charName)
 
 //***REDUCE***
 //1. Get total mass of all characters
+let charMass = characters.map((c)=>{
+    return c.mass
+})
+
+let massSum = charMass.reduce((accum, num)=>{
+    return accum + num
+},0)
+console.log('Total mass of all characters')
+console.log(massSum)
+
 //2. Get total height of all characters
+let charHeight = characters.map((c)=>{
+    return c.height
+})
+
+let totalHeight = charHeight.reduce((accum, num)=>{
+    return accum + num
+},0)
+console.log('Total height of all characters')
+console.log(totalHeight)
+
 //3. Get total number of characters by eye color
+let charEyes = characters.map((c)=>{
+    return c.eye_color
+})
+
+
 //4. Get total number of characters in all the character names
 
 //***FILTER***

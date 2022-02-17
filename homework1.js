@@ -43,11 +43,11 @@ if(isOdd(2)){
 }
 
 // 6. what will this log?
- //It will return the log "isOdd"
+////It will return the log "isOdd"
 
 
 // 7. what is the value of isOdd(2) 
-// The value is 2
+//// The value is 2
 
 
 // 8. Fix the isOdd function to make this work
