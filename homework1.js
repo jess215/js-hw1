@@ -110,19 +110,38 @@ console.log(math('+',2,3))
 
 
 // 5. Write a function that takes an array of strings and a string and returns true or false if the string is in the array.
+const arrFind = ['cat', 'dog', 'ferret', 'cow', 'rabbit', 'horse'];
 
+console.log(arrFind.includes('rabbit'));
 
 // 6. write a function that takes a person object {firstname: 'joe', lastname: 'shmoe', age: 50} and returns a formatted string "joe shmoe is 50 years old"
+const firstName = 'Joe';
+const lastName = 'Shmoe';
+const age = 50;
 
+const fullName = `${firstName} ${lastName} is ${age} years old.`
+console.log(fullName)
 
 // 7. write a function that takes an array that removes the first and last items and return that new array
+let pets = ['Rowdy', 'Jinx', 'Remy', 'Harley', 'Arty'];
+pets.pop();
+pets.shift();
 
+console.log(pets)
 
 // 8. write a function that swaps the last and first items of an array 
-
+function swap(arrColor) {
+    [arrColor[0], arrColor[arrColor.length - 1]]
+    = [arrColor[arrColor.length - 1], arrColor[0]];
+    return arrColor;
+}
+console.log(swap(['blue', 'red', 'yellow', 'purple', 'green']));
 
 // 9. write a function that takes a array and a second argument and returns the index in the array of the second argument
+const arrFruit = ['apple', 'pear', 'orange', 'banana', 'apricot'];
+let index = arrFruit.indexOf('banana');
 
+console.log(arrFruit.indexOf('banana'));
 
 // 10. write a function that takes a number and uses a ternary to return if the number is odd or even.
 
