@@ -97,10 +97,12 @@ console.log('Count of eye colors')
 console.log(charEyes)
 
 
-//4. Get total number of characters in all the character names
+//4. Get total number of characters in all the character names **************
+
 
 console.log('')
 console.log('Total number of characters in names')
+//console.log(charNameNum)
 
 //***FILTER***
 //1. Get characters with mass greater than 100
