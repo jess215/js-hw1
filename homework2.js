@@ -106,9 +106,32 @@ console.log('Total number of characters in names')
 
 //***FILTER***
 //1. Get characters with mass greater than 100
+const mass100 = characters.filter(characters => characters.mass > 100)
+
+console.log('')
+console.log('Characters with mass greater than 100')
+console.log(mass100)
+
 //2. Get characters with height less than 200
+const height200 = characters.filter(characters => characters.height < 200)
+
+console.log('')
+console.log('Characters with height less than 200')
+console.log(height200)
+
 //3. Get all male characters
+const maleCharacters = characters.filter(characters => characters.gender === "male")
+
+console.log('')
+console.log('All male characters')
+console.log(maleCharacters)
+
 //4. Get all female characters
+const femaleCharacters = characters.filter(characters => characters.gender === "female")
+
+console.log('')
+console.log('All female characters')
+console.log(femaleCharacters)
 
 //***SORT***
 //1. Sort by mass
