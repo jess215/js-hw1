@@ -34,6 +34,8 @@ const characters = [
 let characterNames = characters.map((c)=>{
     return c.name
 })
+
+console.log('')
 console.log('Array of Names')
 console.log(characterNames)
 
@@ -41,6 +43,8 @@ console.log(characterNames)
 let characterHeight = characters.map((c)=>{
     return c.height
 })
+
+console.log('')
 console.log('Array of heights')
 console.log(characterHeight)
 
@@ -48,48 +52,55 @@ console.log(characterHeight)
 let charNameHeight = characters.map((c)=>{
     return {name:c.name, height:c.height}
 })
+
+console.log('')
 console.log('Name and height')
 console.log(charNameHeight)
 
-//4. Get array of all first names
+//4. Get array of all first names *****************************************************
 const charName = characters.map((c)=>{
     return c.name
 })
 
+console.log('')
 console.log('Name')
 console.log(charName[0]);
 console.log(charName)
 
 //***REDUCE***
 //1. Get total mass of all characters
-let charMass = characters.map((c)=>{
-    return c.mass
-})
+var totalMass = characters.reduce((acc, characters) => acc + characters.mass, 0)
 
-let massSum = charMass.reduce((accum, num)=>{
-    return accum + num
-},0)
+console.log('')
 console.log('Total mass of all characters')
-console.log(massSum)
+console.log(totalMass)
 
 //2. Get total height of all characters
-let charHeight = characters.map((c)=>{
-    return c.height
-})
+var totalHeight = characters.reduce((acc, characters) => acc + characters.height, 0)
 
-let totalHeight = charHeight.reduce((accum, num)=>{
-    return accum + num
-},0)
-console.log('Total height of all characters')
+console.log('')
+console.log('Total height of characters')
 console.log(totalHeight)
 
 //3. Get total number of characters by eye color
-let charEyes = characters.map((c)=>{
-    return c.eye_color
-})
+const charEyes = characters.reduce(function (acc, characters) {
+    if (acc[characters.eye_color]) {
+        acc[characters.eye_color] = ++acc[characters.eye_color];
+    } else {
+        acc[characters.eye_color] = 1;
+    }
+    return acc;
+}, {});
+
+console.log('')
+console.log('Count of eye colors')
+console.log(charEyes)
 
 
 //4. Get total number of characters in all the character names
+
+console.log('')
+console.log('Total number of characters in names')
 
 //***FILTER***
 //1. Get characters with mass greater than 100
