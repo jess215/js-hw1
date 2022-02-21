@@ -57,15 +57,12 @@ console.log('')
 console.log('Name and height')
 console.log(charNameHeight)
 
-//4. Get array of all first names *****************************************************
-const charName = characters.map((c)=>{
-    return c.name
-})
+//4. Get array of all first names
+const firstName = characters.map(c => c.name.split(" ")[0])
 
 console.log('')
-console.log('Name')
-console.log(charName[0]);
-console.log(charName)
+console.log('First Name')
+console.log(firstName)
 
 //***REDUCE***
 //1. Get total mass of all characters
@@ -97,12 +94,12 @@ console.log('Count of eye colors')
 console.log(charEyes)
 
 
-//4. Get total number of characters in all the character names **************
-
+//4. Get total number of characters in all the character names
+const charNameNum = characters.reduce((acc, cur) => acc + cur.name.length, 0)
 
 console.log('')
 console.log('Total number of characters in names')
-//console.log(charNameNum)
+console.log(charNameNum)
 
 //***FILTER***
 //1. Get characters with mass greater than 100
@@ -164,9 +161,40 @@ console.log(sortGender)
 
 //***EVERY***
 //1. Does every character have blue eyes?
+const blueEyes = characters.every((character) => {
+    return character.eye_color === 'blue';
+})
+
+console.log('')
+console.log('Does every character have blue eyes?')
+console.log(blueEyes)
+
 //2. Does every character have mass more than 40?
+const mass40 = characters.every((character) => {
+    return character.mass > 40;
+})
+
+console.log('')
+console.log('Does every character have mass more than 40')
+console.log(blueEyes)
+
 //3. Is every character shorter than 200?
+const short200 = characters.every((character) => {
+    return character.height < 200;
+})
+
+console.log('')
+console.log('Is every character shorter than 200?')
+console.log(short200)
+
 //4. Is every character male?
+const allMaleChar = characters.every((character) => {
+    return character.gender === 'male';
+})
+
+console.log('')
+console.log('Is every character male')
+console.log(allMaleChar)
 
 //***SOME***
 //1. Is there at least one male character?
