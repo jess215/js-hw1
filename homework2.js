@@ -161,8 +161,8 @@ console.log(sortGender)
 
 //***EVERY***
 //1. Does every character have blue eyes?
-const blueEyes = characters.every((character) => {
-    return character.eye_color === 'blue';
+const blueEyes = characters.every((c) => {
+    return c.eye_color === 'blue';
 })
 
 console.log('')
@@ -170,8 +170,8 @@ console.log('Does every character have blue eyes?')
 console.log(blueEyes)
 
 //2. Does every character have mass more than 40?
-const mass40 = characters.every((character) => {
-    return character.mass > 40;
+const mass40 = characters.every((c) => {
+    return c.mass > 40;
 })
 
 console.log('')
@@ -179,8 +179,8 @@ console.log('Does every character have mass more than 40')
 console.log(blueEyes)
 
 //3. Is every character shorter than 200?
-const short200 = characters.every((character) => {
-    return character.height < 200;
+const short200 = characters.every((c) => {
+    return c.height < 200;
 })
 
 console.log('')
@@ -188,8 +188,8 @@ console.log('Is every character shorter than 200?')
 console.log(short200)
 
 //4. Is every character male?
-const allMaleChar = characters.every((character) => {
-    return character.gender === 'male';
+const allMaleChar = characters.every((c) => {
+    return c.gender === 'male';
 })
 
 console.log('')
@@ -198,9 +198,40 @@ console.log(allMaleChar)
 
 //***SOME***
 //1. Is there at least one male character?
+const oneMale = characters.some((c) => {
+    return c.gender === "male";
+})
+
+console.log('')
+console.log('Is there at least one male character?')
+console.log(oneMale)
+
 //2. Is there at least one character with blue eyes?
+const oneBlue = characters.some((c) => {
+    return c.eye_color === "blue";
+})
+
+console.log('')
+console.log('Is there at least one character with blue eyes?')
+console.log(oneBlue)
+
 //3. Is there at least one character taller than 210?
+const oneTall = characters.some((c) => {
+    return c.height > 210;
+})
+
+console.log('')
+console.log('Is there at least one character taller than 210?')
+console.log(oneTall)
+
 //4. Is there at least one character that has mass less than 50?
+const oneMass = characters.some((c) => {
+    return c.mass < 50;
+})
+
+console.log('')
+console.log('Is there at least one character that has mass less than 50?')
+console.log(oneMass)
 
 //***Bonus***/
 // come up with your own
