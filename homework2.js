@@ -135,9 +135,32 @@ console.log(femaleCharacters)
 
 //***SORT***
 //1. Sort by mass
+sortMass = characters.sort((a, b) => a.mass - b.mass)
+
+console.log('')
+console.log('Sorted by mass')
+console.log(sortMass)
+
 //2. Sort by height
-//3. Sort by name
+sortHeight = characters.sort((a, b) => a.height - b.height)
+
+console.log('')
+console.log('Sorted by height')
+console.log(sortHeight)
+
+//3. Sort by name *************** NOT WORKING
+sortName = characters.sort((a, b) => a.name - b.name)
+
+console.log('')
+console.log('Sorted by name')
+console.log(sortName)
+
 //4. Sort by gender
+sortGender = characters.sort((a, b) => a.gender - b.gender)
+
+console.log('')
+console.log('Sorted by gender')
+console.log(sortGender)
 
 //***EVERY***
 //1. Does every character have blue eyes?
